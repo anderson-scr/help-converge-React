@@ -1,0 +1,50 @@
+.holdBtn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.convergeLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 85%;
+  border: 2px solid rgba(99, 164, 100, .3);
+  border-radius: 15px;
+  margin-bottom: 3%;
+  transition: border 700ms ease-out;
+}
+.btnDelete {
+  width: 90px;
+  transition: color 700ms ease-out;
+
+  letter-spacing: 1px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  color: rgb(223, 223, 223);
+  background-color: #fff;
+}
+.btnDelete:hover {
+  color: darkred;
+  font-weight: 600;
+}
+.layoutChange {
+  margin-top: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.columnsContainner {
+  display: flex;
+  width: 97%;
+  height: 350px;
+}

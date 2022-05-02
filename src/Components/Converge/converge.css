@@ -1,0 +1,42 @@
+.convergeLines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titleContainner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.titleText {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #63a464;
+}
+.titleLine {
+  margin-top: 10px;
+  height: 4px;
+  width: 30%;
+  background-color: rgb(22, 37, 51);
+}
+
+.newLine {
+  width: 25%;
+  height: 33px;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.newLine:hover {
+  box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+  border-color: #63a464;
+  border-width: 2px;
+  background-color: rgb(253, 253, 253);
+}
