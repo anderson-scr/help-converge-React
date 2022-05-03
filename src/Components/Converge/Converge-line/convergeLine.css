@@ -1,4 +1,4 @@
-.holdBtn {
+.lineContainner {
   position: relative;
   width: 100%;
   display: flex;
@@ -13,7 +13,7 @@
   align-items: center;
   height: 600px;
   width: 85%;
-  border: 2px solid rgba(99, 164, 100, .3);
+  border: 2px solid #d0e4d0;
   border-radius: 15px;
   margin-bottom: 3%;
   transition: border 700ms ease-out;

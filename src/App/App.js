@@ -5,14 +5,13 @@ import Home from '../Components/Home/Home'
 import Converge from '../Components/Converge/Converge'
 import XML from '../Components/XML-page/XML'
 import Mensagens from '../Components/user-phrase/UserPhrase'
-import SideBar from '../Components/SideBar/SideBar'
-
+import HeaderBar from '../Components/headerBar/headerBar'
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <SideBar />
+          <HeaderBar />
           <div className='screenChange'>
               <Routes>
                 <Route path="/" element={<Home />} />
