@@ -42,9 +42,28 @@
   gap: 10px;
 }
 
-
 .columnsContainner {
   display: flex;
   width: 97%;
-  height: 350px;
+  height: 300px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 3%;
+  overflow-x: auto;
+}
+
+
+.plusContainner {
+  color: rgba(22, 37, 51, .7);
+  transition: color .3s ease;
+  cursor: pointer;
+}
+.plusContainner:hover {
+  color: #63a464;
+  font-weight: 600;
+}
+.plusIcon {
+  width: 40px;
+  height: 40px;
 }

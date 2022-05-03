@@ -1,13 +1,18 @@
 import React,{Component} from "react";
 import './convergeLine.css'
 import { FaRegEdit } from "react-icons/fa";
-
+import { BsPlus } from "react-icons/bs";
+import ColumnCard from "../ColumnCard/ColumnCard"
 class ConvergeLine extends Component{
   constructor(props) {
     super(props)
     this.mouseIn = this.mouseIn.bind(this)
     this.mouseOut = this.mouseOut.bind(this)
-    this.testeee = this.testeee.bind(this)
+    this.addColumn = this.addColumn.bind(this)
+    this.horizontalScroll = this.horizontalScroll.bind(this)
+    this.state = {
+      columnCount: [0]
+    }
   }
 
   mouseIn() {
@@ -18,10 +23,17 @@ class ConvergeLine extends Component{
     const borderColor = document.querySelector(`.changeColor${this.props.keyID}`)
     borderColor.style.borderColor = "#d0e4d0"
   }
-  testeee() {
-    let test = document.querySelector(`.teste${this.props.keyID}`)
-    test.textContent = document.querySelector(`.digita${this.props.keyID}`).value
+
+  addColumn() {
+    this.setState({ columnCount: [...this.state.columnCount, this.state.columnCount.length]})
+    console.log(this.state.columnCount)
   }
+
+  horizontalScroll(evt) {
+    console.log(evt.target
+      )
+  }
+
   render() {
     return (
       <div className={`lineContainner ${this.props.keyID}`}>
@@ -30,11 +42,15 @@ class ConvergeLine extends Component{
           <div className="layoutChange">
             <p>Layout Customizado</p>
             <FaRegEdit />
-          </div>
-          <div className={`teste${this.props.keyID}`}></div>
-          <button onClick={this.testeee}>click</button>
-          <input className={`digita${this.props.keyID}`}></input>
-          <div className="columnsContainner">
+          </div>  
+          <div className="columnsContainner" onWheel={(evt) => { this.horizontalScroll(evt) }}>
+            {this.state.columnCount.map((column) => {
+              return <ColumnCard key={column} identifier={column}/>
+            })}
+            <div className="plusContainner" onClick={this.addColumn}>
+              <BsPlus className="plusIcon"/>
+              <div className="plusText">Adicionar</div>
+            </div>
           </div>
         </div>
       </div>

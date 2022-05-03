@@ -6,6 +6,7 @@ import Converge from '../Components/Converge/Converge'
 import XML from '../Components/XML-page/XML'
 import Mensagens from '../Components/user-phrase/UserPhrase'
 import HeaderBar from '../Components/headerBar/headerBar'
+
 class App extends Component {
   render() {
     return (
