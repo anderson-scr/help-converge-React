@@ -1,16 +1,13 @@
-import react, { Component } from "react";
+import React from "react";
 import "./ColumnCard.css"
 
-class ColumnCard extends Component {
+function ColumnCard() {
 
+  return (
+    <div className={`columnContainner`}>
 
-  render() {
-    return (
-      <div className={`columnContainner`}>
-
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default ColumnCard;
