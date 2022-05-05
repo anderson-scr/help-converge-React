@@ -8,6 +8,7 @@
   border-radius: 4px;
   letter-spacing: 2px;
   cursor: pointer;
+  margin-bottom: 55px;
 }
 .newLine:hover {
   box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);

@@ -1,12 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
 import './userPhrase.css'
 
-class UserPhrase extends Component{
-  render() {
-    return (
-      <h1>This is the User Phrase page</h1>
-    )
-  }
+function UserPhrase() {
+  return (
+    <h1>This is the User Phrase page</h1>
+  )
 }
 
 export default UserPhrase;

@@ -7,24 +7,22 @@ import XML from '../Components/XML-page/XML'
 import Mensagens from '../Components/user-phrase/UserPhrase'
 import HeaderBar from '../Components/headerBar/headerBar'
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <HeaderBar />
-          <div className='screenChange'>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Converge" element={<Converge />} />
-                <Route path='/XML' element={<XML />} />
-                <Route path='/Mensagens' element={<Mensagens />}/>
-              </Routes>
-          </div>
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <HeaderBar />
+        <div className='screenChange'>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Converge" element={<Converge />} />
+              <Route path='/XML' element={<XML />} />
+              <Route path='/Mensagens' element={<Mensagens />}/>
+            </Routes>
         </div>
-      </Router>
-    )
-  }
+      </div>
+    </Router>
+  )
 }
 
 export default App;
