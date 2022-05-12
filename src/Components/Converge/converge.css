@@ -10,6 +10,7 @@
   cursor: pointer;
   margin-bottom: 55px;
 }
+
 .newLine:hover {
   box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
   border-color: #63a464;

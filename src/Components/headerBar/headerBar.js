@@ -1,7 +1,7 @@
 import React from 'react';
 import './headerBar.css';
 import {ReactComponent as HelpConverge} from '../../Assets/Svg/help-converge-logo-figma.svg'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 function headerBar() {
@@ -10,15 +10,15 @@ function headerBar() {
     <>
       <div className="titleContainner">
         <div className="titleLine"></div>
-        <Link to="/">
+        <NavLink to="/">
           <HelpConverge className='logo'/>
-        </Link>
+        </NavLink>
         <div className="titleLine"></div>
       </div>
       <div className='headerMenu'>
-        <Link to="/Converge" className='links'>Converge</Link>
-        <Link to="/XML" className='links'>XML</Link>
-        <Link to="/Mensagens" className='links'>Mensagens</Link>
+        <NavLink to="/Converge" className='links'>Converge</NavLink>
+        <NavLink to="/XML" className='links'>XML</NavLink>
+        <NavLink to="/Mensagens" className='links'>Mensagens</NavLink>
       </div>
     </>
   )

@@ -27,4 +27,12 @@
   text-decoration: none;
   width: 90px;
   color: #fff;
+  transition: color .3s ease;
+}
+.links:hover {
+  color: #1dc6df;
+}
+.active {
+  color: #1dc6df;
+  letter-spacing: 1px;
 }
